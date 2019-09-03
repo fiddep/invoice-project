@@ -11,16 +11,13 @@ const createInvoice = require('./domain/service/invoice/createInvoice');
 
 const presenter = require('./drivers/cli');
 
-const customersData = path.resolve(__dirname, '../data/customers.json');
-const usersData = path.resolve(__dirname, '../data/user.json');
-const ordersData = path.resolve(__dirname, '../data/order.json');
-const invoicesData = path.resolve(__dirname, '../data/invoice.json');
+const dataPath = file => path.resolve(__dirname, `../data/${file}.json`);
 
 async function run() {
-  const customerStorage = await storage.of(customersData);
-  const userStorage = await storage.of(usersData);
-  const orderStorage = await storage.of(ordersData);
-  const invoiceStorage = await storage.of(invoicesData);
+  const customerStorage = await storage.of(dataPath('customers'));
+  const userStorage = await storage.of(dataPath('user'));
+  const orderStorage = await storage.of(dataPath('order'));
+  const invoiceStorage = await storage.of(dataPath('invoice'));
 
   const customerRepository = new CustomerRepository(customerStorage);
   const userRepository = new UserRepository(userStorage);
