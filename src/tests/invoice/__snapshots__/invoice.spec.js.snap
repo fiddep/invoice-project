@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createInvoice create invoice from all parts 1`] = `
+Invoice {
+  "createdAt": 1482363367071,
+  "customer": Object {},
+  "id": null,
+  "invoiceId": "3",
+  "order": Object {},
+  "user": Object {
+    "settings": Object {
+      "invoiceStrategy": "linear-increment",
+    },
+  },
+}
+`;

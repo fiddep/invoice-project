@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;Z:\bin;C:\Program Files\ImageMagick-7.0.7-Q16;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\scala\bin;C:\php;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Skype\Phone;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\composer;C:\Users\Fredrik.OLYMPUS\AppData\Local\Programs\Python\Python36-32\Scripts;C:\Users\Fredrik.OLYMPUS\AppData\Local\Programs\Python\Python36-32;C:\Users\Fredrik.OLYMPUS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Fredrik.OLYMPUS\AppData\Local\atom\bin;C:\Users\Fredrik.OLYMPUS\AppData\Local\Yarn\bin;C:\Users\Fredrik.OLYMPUS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Fredrik.OLYMPUS\AppData\Roaming\npm;C:\Users\Fredrik.OLYMPUS\AppData\Roaming\Composer\vendor\bin;C:\Users\Fredrik.OLYMPUS\AppData\Local\Microsoft\WindowsApps
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  10.14.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:126002:13)
+      at Interface.emit (events.js:182:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:168:10)
+      at ReadStream.emit (events.js:182:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1022:36)
+      at ReadStream.emit (events.js:182:13)
+      at addChunk (_stream_readable.js:283:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

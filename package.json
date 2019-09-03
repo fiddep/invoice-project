@@ -1,0 +1,35 @@
+{
+  "name": "invoice-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "api-server",
+    "express",
+    "starter",
+    "kit"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "nodemon": "^1.18.10"
+  }
+}

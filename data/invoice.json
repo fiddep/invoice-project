@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "invoiceId": "2019-1002",
+    "created_at": "2019-04-23",
+    "paymentTerm": "30",
+    "userReference": "",
+    "customer": {
+      "reference": "Niclas Rosvall",
+      "company": "exir broadcasting",
+      "address": "Industigatan 17",
+      "zip": "24231",
+      "city": "hörby"
+    },
+    "user": {
+      "reference": "Fredrik Palmquist",
+      "company": "zetta konsult"
+    },
+    "rows": []
+  }
+]

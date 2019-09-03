@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "customerReference": "Niclas Rosvall",
+    "userReference": "Fredrik Palmquist",
+    "rows": [
+      {
+        "unit": 2,
+        "description": "Migration av hemsida till exirbroadcasting.com",
+        "price": 550,
+        "tax": 0.25,
+        "discount": 0
+      },
+      {
+        "unit": 11,
+        "description": "Utbyggnad samt testning av funktioner",
+        "price": 550,
+        "tax": 0.25,
+        "discount": 0
+      }
+    ]
+  }
+]

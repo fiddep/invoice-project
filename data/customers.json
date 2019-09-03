@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "itresurs",
+    "address": "kungsgatan 33",
+    "zipcode": "24230",
+    "city": "hörby"
+  },
+  {
+    "id": 2,
+    "name": "exir broadcasting",
+    "address": "industrigatan 17",
+    "zipcode": "24231",
+    "city": "hörby"
+  }
+]

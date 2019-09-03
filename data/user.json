@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "fredrik palmquist",
+    "mobile": "0709394595",
+    "email": "fiddep@telia.com",
+    "address": "Nätsnäcksgränd 8",
+    "zip": 21631,
+    "city": "Limhamn",
+    "settings": {
+      "invoiceStrategy": "linear-increment"
+    }
+  }
+]
