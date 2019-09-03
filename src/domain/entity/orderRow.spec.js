@@ -1,6 +1,6 @@
 const OrderRow = require('./orderRow');
 
-describe('addCustomer', () => {
+describe('create order row', () => {
   it('create a row', () => {
     const row = new OrderRow(1, 'hej', 5, 0.2);
 

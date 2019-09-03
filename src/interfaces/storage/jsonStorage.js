@@ -11,7 +11,7 @@ class jsonStorage {
     const parsed = require(this.fileName);
     this.data = parsed.reduce((map, obj) => ({ ...map, [obj.id]: obj }), {});
     this.ids = parsed.map(obj => obj.id);
-    this.index = this.ids.length + 1;
+    this.index = lastEl(this.ids) + 1;
   }
 
   constructor(filename) {

@@ -7,6 +7,8 @@ const UserRepository = require('./domain/repository/userRepository');
 const OrderRepository = require('./domain/repository/orderRepository');
 const InvoiceRepository = require('./domain/repository/invoiceRepository');
 
+const createUser = require('./domain/service/user/createUser');
+const createCustomer = require('./domain/service/customer/createCustomer');
 const createInvoice = require('./domain/service/invoice/createInvoice');
 
 const presenter = require('./drivers/cli');
@@ -24,7 +26,22 @@ async function run() {
   const orderRepository = new OrderRepository(orderStorage);
   const invoiceRepository = new InvoiceRepository(invoiceStorage);
 
-  const invoice = await createInvoice(1, 1, 1, {
+  await createUser(
+    'fredrik palmquist',
+    'zetta konsult',
+    'fiddep@telia.com',
+    '0709394595',
+    'Nätsnäcksgränd 8',
+    'Malmö',
+    21631,
+    { invoiceStrategy: 'linear-increment' },
+    { userRepository }
+  );
+  await createCustomer('itresurs', 'kungsgatan 33', '24230', 'hörby', {
+    customerRepository,
+  });
+
+  const invoice = await createInvoice(3, 1, 1, {
     customerRepository,
     userRepository,
     orderRepository,
