@@ -1,3 +1,13 @@
+// @ts-check
+
+/**
+ * @typedef {Object} OrderRow
+ * @param {number} unit
+ * @param {string} description
+ * @param {number} price
+ * @param {number} tax
+ * @param {number} discount
+ */
 function OrderRow(unit, description, price, tax, discount) {
   this.unit = unit;
   this.description = description;

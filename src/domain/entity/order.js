@@ -1,5 +1,16 @@
+// @ts-check
+
 const isFunction = require('../../utils/isFunction');
 
+/**
+ * @typedef {import('./orderRow')} OrderRow
+ *
+ * @typedef {Object} Order
+ * @param {number} id
+ * @param {OrderRow[]} rows
+ * @param {string} userReference
+ * @param {string} customerReference
+ */
 function Order(id, rows, userReference, customerReference) {
   this.id = id;
   this.rows = rows;
