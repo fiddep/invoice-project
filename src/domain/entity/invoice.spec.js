@@ -35,4 +35,26 @@ describe('Invoice', () => {
       createdAt: 123789,
     });
   });
+
+  it('get invoice due date', () => {
+    const invoiceId = 1;
+    const order = { rows: [] };
+    const customer = { id: 1 };
+    const user = { id: 2 };
+    const date = Date.UTC(2019, 3, 23);
+    const expected = Date.UTC(2019, 4, 23);
+    const invoice = new Invoice(
+      null,
+      invoiceId,
+      order,
+      customer,
+      user,
+      date,
+      30
+    );
+
+    const result = invoice.calculateDueDate();
+
+    expect(result).toEqual(expected);
+  });
 });

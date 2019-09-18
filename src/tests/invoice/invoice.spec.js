@@ -13,6 +13,7 @@ const mockInvoiceRepository = new InvoiceRepository();
 describe('createInvoice', () => {
   it('create invoice from all parts', async () => {
     Date.now = jest.fn(() => 1482363367071);
+    const paymentTerm = 20;
     const mockId = 0;
     mockOrderRepository.get = jest.fn(id => ({}));
     mockUserRepository.get = jest.fn(id => ({
@@ -22,7 +23,7 @@ describe('createInvoice', () => {
     mockInvoiceRepository.persist = jest.fn(obj => obj);
     mockInvoiceRepository.last = jest.fn(() => ({ id: 2 }));
 
-    const invoice = await createInvoice(mockId, mockId, mockId, {
+    const invoice = await createInvoice(mockId, mockId, mockId, paymentTerm, {
       orderRepository: mockOrderRepository,
       userRepository: mockUserRepository,
       customerRepository: mockCustomerRepository,

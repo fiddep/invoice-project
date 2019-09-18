@@ -7,6 +7,7 @@ Invoice {
   "id": null,
   "invoiceId": "3",
   "order": Object {},
+  "paymentTerm": 20,
   "user": Object {
     "settings": Object {
       "invoiceStrategy": "linear-increment",

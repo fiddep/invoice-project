@@ -6,6 +6,7 @@ async function createInvoice(
   orderId,
   userId,
   customerId,
+  paymentTerm,
   { orderRepository, userRepository, customerRepository, invoiceRepository }
 ) {
   const order = await orderRepository.get(orderId);
@@ -21,7 +22,8 @@ async function createInvoice(
     order,
     customer,
     user,
-    getTimestamp()
+    getTimestamp(),
+    paymentTerm
   );
 
   return invoiceRepository.persist(invoice);
