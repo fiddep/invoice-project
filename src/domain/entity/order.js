@@ -11,7 +11,7 @@ const isFunction = require('../../utils/isFunction');
  * @param {string} userReference
  * @param {string} customerReference
  */
-function Order(id, rows, userReference, customerReference) {
+function Order(id, rows = [], userReference, customerReference) {
   this.id = id;
   this.rows = rows;
   this.userReference = userReference;

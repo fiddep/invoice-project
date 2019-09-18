@@ -99,4 +99,21 @@ describe('OrderRow', () => {
       customerReference: 'customer reference',
     });
   });
+
+  it('defaults rows to empty array', () => {
+    const o = {
+      id: 4,
+      userReference: 'user reference',
+      customerReference: 'customer reference',
+    };
+
+    const result = Order.of(o);
+
+    expect(result).toEqual({
+      id: 4,
+      rows: [],
+      userReference: 'user reference',
+      customerReference: 'customer reference',
+    });
+  });
 });
